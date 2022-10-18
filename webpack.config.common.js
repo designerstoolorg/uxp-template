@@ -21,8 +21,9 @@ const getDefaultWebpackConfig = ({
         new CopyPlugin({
             patterns: [{ from: copyDirectory, to: "" }],
         }),
-        // fixes the styled component issue on production build
         new webpack.DefinePlugin({
+            // fixes the styled component issue on production build
+            // @see https://stackoverflow.com/a/54738834
             SC_DISABLE_SPEEDY: true,
             "process.env": {
                 HOST_XD: isXd ? true : false,
@@ -63,7 +64,6 @@ const getDefaultWebpackConfig = ({
             viewport: "commonjs viewport",
             photoshop: "commonjs photoshop",
         },
-
         resolve: {
             extensions: [".tsx", ".ts", ".js"],
         },

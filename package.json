@@ -11,7 +11,9 @@
     "dev:xd": "webpack -w -c webpack.config.xd.js",
     "dev:ps": "webpack -w -c webpack.config.ps.js",
     "dev:web": "webpack -w -c webpack.config.web.js",
-    "pack:xd": "cd dist/adobe-xd&& zip -r ../adobe-xd.xdx *"
+    "serve:web": "serve dist/web",
+    "pack:xd": "rm -rf dist/adobe-xd && yarn build:xd && cd dist/adobe-xd && zip -r ../adobe-xd.xdx *",
+    "pack:ps": "rm -rf dist/ps && yarn build:ps && cd dist/ps && zip -r ../photoshop.ccx *"
   },
   "keywords": [],
   "author": "",
@@ -20,7 +22,8 @@
     "@types/react": "^18.0.21",
     "@types/react-dom": "^18.0.6",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "serve": "^14.0.1"
   },
   "devDependencies": {
     "copy-webpack-plugin": "^11.0.0",

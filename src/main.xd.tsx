@@ -45,14 +45,3 @@ const panelObject: PanelExportObject = {
 module.exports.panels = {
   uxpTemplate: panelObject,
 };
-
-export interface CreatePanelReturns {
-  /**
-   * @var override the object to modify the event listener
-   */
-  $: PanelExportObject;
-  /**
-   * @var return the export object which will be use in `module.exports`
-   */
-  exports: PanelExportObject;
-}
