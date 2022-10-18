@@ -1,0 +1,36 @@
+{
+  "id": "11223344",
+  "author": "Designers Tool",
+  "name": "UXP Template",
+  "version": "1.0.0",
+  "host": {
+    "app": "XD",
+    "minVersion": "26.0"
+  },
+  "description": "UXP Template",
+  "summary": "UXP Template",
+  "website": "https://www.github.com/designerstoolorg/",
+  "languages": ["en"],
+  "keywords": [],
+  "helpUrl": "support@designerstool.com",
+  "icons": [
+    {
+      "width": 24,
+      "height": 24,
+      "path": "images/icon@1x.png"
+    },
+    {
+      "width": 48,
+      "height": 48,
+      "path": "images/icon@2x.png"
+    }
+  ],
+  "uiEntryPoints": [
+    {
+      "type": "panel",
+      "label": "UXP Template",
+      "panelId": "uxpTemplate"
+    }
+  ],
+  "releaseNotes": "-"
+}

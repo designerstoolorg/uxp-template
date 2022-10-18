@@ -1,0 +1,33 @@
+{
+  "name": "uxp-template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:xd": "webpack --mode=production -c webpack.config.xd.js",
+    "build:ps": "webpack --mode=production -c webpack.config.ps.js",
+    "build:web": "webpack --mode=production -c webpack.config.web.js",
+    "dev:xd": "webpack -w -c webpack.config.xd.js",
+    "dev:ps": "webpack -w -c webpack.config.ps.js",
+    "dev:web": "webpack -w -c webpack.config.web.js",
+    "pack:xd": "cd dist/adobe-xd&& zip -r ../adobe-xd.xdx *"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^11.0.0",
+    "ts-loader": "^9.4.1",
+    "typescript": "^4.8.4",
+    "webpack": "^5.74.0",
+    "webpack-bundle-analyzer": "^4.6.1",
+    "webpack-cli": "^4.10.0"
+  }
+}
